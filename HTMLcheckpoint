@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SIGN UP FORM</title>
+  </head>
+
+  <body>
+    <main>
+      <header class="page-header">
+        <h1>Dunder Mifflin Form Page</h1>
+      </header>
+<form>
+  <p>Required fields are followed by <abbr title="required">*</abbr></p>
+
+  <p>
+
+  <label for="firstname">First Name: <abbr title="required">*</abbr></label>
+  <input id="firstname" placeholder="Your first name..."><br>
+
+  <label for="lastname">Last Name: <abbr title="required">*</abbr></label>
+  <input id="lastname" name="last" placeholder="Your last name..."><br>
+
+  <label for="youremail">Your Email: <abbr title="required">*</abbr></label>
+  <input id="youremail" name="Email" placeholder="Your email..."><br>
+
+  <label for="yourpassword">Your Password: <abbr title="required">*</abbr></label>
+  <input id="yourpassword" name="password" placeholder="Your password..."><br>
+
+  <label for="yourgithub">Your GitHub: </label>
+  <input id="yourgithub" name="github" placeholder="Your GitHub handle..."><br>
+
+  <button type="submit">Submit</button>
+
+  </p>
+  <p>
+    <input type="radio" id="enterprise" name="radiobuttonplan" value="Enterprise">
+    <label for="enterprise">Enterprise: </label>
+
+    <input type="radio" id="pro" name="radiobuttonplan" value="Pro">
+    <label for="pro">Pro: </label>
+
+    <input type="radio" id="free" name="radiobuttonplan" value="Free" checked>
+    <label for="free">Free: </label>
+  </p>
+</form>
+
+    </main>
+    <aside> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Dunder_Mifflin%2C_Inc.svg/500px-Dunder_Mifflin%2C_Inc.svg.png" alt="Dunder Mifflin Paper Company"></aside>
+    <footer>
+    <input type="checkbox" name="rememberme" value="Remember Me"> Remember Me
+   </footer>
+  </body>
+
+</html>
