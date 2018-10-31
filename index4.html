@@ -4,26 +4,34 @@
     <meta charset="utf-8">
     <title>SIGN UP FORM</title>
   </head>
-  <header class="page-header">
-    <h1>Dunder Mifflin Form Page</h1>
-</header>
-  <body>
-    <main>
-    <form>
-      <p><input type="Your Email" name="Email" value="" placeholder="your email..."></p>
-      <p><input type="Your Password" name="password" value="" placeholder="your password..."></p>
-      <p><input type="Your GitHub User Name" name="github" value="" placeholder="your github handle..."></p>
-      <p><input type="First Name" name="first" value="" placeholder="your first name..."></p>
-      <p><input type="Last Name" name="last" value="" placeholder="your last name..."></p>
-      <p><button type="submit">Submit</button></p>
+    <body>
+     <h1 style="font-family:verdana;">Dunder Mifflin Form Page</h1>
+      <form>
+       <label>Email: <input name="email" placeholder="your email..." required/></label><br>
+
+       <label>Password: <input name="password" placeholder="XXXXXX" maxlength="6"></label><br>
+       <label>Submit Button: <input name="submit button" value="Submit" required/></label><br>
+
+       <label>First Name: <input name="first name" placeholder="your first name..." required/></label><br>
+
+       <label>Last Name: <input name="last name" placeholder="your last name..." required/></label><br>
+
+       <label>GitHub User Name: <input name="gitHub user name" placeholder="your github handle..."></label><br>
+
+       <p>
+       <label>Submit User Info: <button type="submit">Submit</button></label>
+       <br>
+
+       <label>Remember Me Checkbox: <input type="checkbox" name="rememberme" value="Remember Me"></label>
+       </p>
+
+     <h2>Pick a Plan!</h2>
+      <label>Enterprise </label> <input type="radio" id="enterprise" name="radiobuttonplan" value="Enterprise">
+
+      <label>Pro </label><input type="radio" id="pro" name="radiobuttonplan" value="Pro">
+
+      <label>Free </label><input type="radio" id= "free" name="radiobuttonplan" value="Free" checked>
+      <br>
     </form>
-    <p>
-      <input type="radio" name="radiobuttonplan" value="Enterprise"> Enterprise
-      <input type="radio" name="radiobuttonplan" value="Pro"> Pro
-      <input type="radio" name="radiobuttonplan" value="Free" checked> Free
-    </p>
-    </main>
-    <aside> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Dunder_Mifflin%2C_Inc.svg/500px-Dunder_Mifflin%2C_Inc.svg.png" alt="Dunder Mifflin Paper Company"></aside>
   </body>
-    <footer><input type="checkbox" name="rememberme" value="Remember Me"> Remember Me</footer>
 </html>
