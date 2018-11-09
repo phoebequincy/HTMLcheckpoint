@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>SIGN UP FORM</title>
-  </head>
-    <body>
-     <h1 style="font-family:verdana;">Dunder Mifflin Form Page</h1>
-      <form>
-       <label>Email: <input name="email" placeholder="your email..." required/></label><br>
 
-       <label>Password: <input name="password" placeholder="XXXXXX" maxlength="6"></label><br>
-       <label>Submit Button: <input name="submit button" value="Submit" required/></label><br>
+<head>
+  <meta charset="utf-8">
+  <title>SIGN UP FORM</title>
+</head>
 
-       <label>First Name: <input name="first name" placeholder="your first name..." required/></label><br>
+<body>
+  <h1 style="font-family:verdana;">Dunder Mifflin Form Page</h1>
+  <form>
+    <label for="email" class="active">Enter your email</label>
+    <input class='validate' type='email' placeholder="Email..." name='email' id='email' /><br><br>
 
-       <label>Last Name: <input name="last name" placeholder="your last name..." required/></label><br>
+    <label for='password' class="active">Your password</label>
+    <input class='validate' type='password' name='password' id='password' maxlength="6" placeholder="Password..." required /><br><br>
 
-       <label>GitHub User Name: <input name="gitHub user name" placeholder="your github handle..."></label><br>
 
-       <p>
-       <label>Submit User Info: <button type="submit">Submit</button></label>
-       <br>
+    <label for="first_name">First Name</label>
+    <input class="active" placeholder="Your first name..." id="first_name" type="text" required /><br><br>
 
-       <label>Remember Me Checkbox: <input type="checkbox" name="rememberme" value="Remember Me"></label>
-       </p>
+    <label for="last_name">Last Name</label>
+    <input class="active" placeholder="Your last name..." id="last_name" type="text" required /><br><br>
 
-     <h2>Pick a Plan!</h2>
-      <label>Enterprise </label> <input type="radio" id="enterprise" name="radiobuttonplan" value="Enterprise">
+    <label for="githubUserName">GitHub User Name: <input name="githubUserName" id="githubUserName" placeholder="your github handle..."></label><br><br>
+    <p>
+      <label for="checkbox">Remember Me Checkbox: <input type="checkbox" name="rememberme" id="checkbox" value="Remember Me"></label>
+    </p>
 
-      <label>Pro </label><input type="radio" id="pro" name="radiobuttonplan" value="Pro">
+    <h2>Pick a Plan!</h2>
+    <label for="enterprise">Enterprise </label> <input type="radio" id="enterprise" name="radiobuttonplan" value="Enterprise">
 
-      <label>Free </label><input type="radio" id= "free" name="radiobuttonplan" value="Free" checked>
-      <br>
-    </form>
-  </body>
+    <label for="pro">Pro </label><input type="radio" id="pro" name="radiobuttonplan" value="Pro">
+
+    <label for="free">Free </label><input type="radio" id="free" name="radiobuttonplan" value="Free" checked>
+    <br>
+    <p>
+      <button type="submit">Submit</button>
+    </p>
+  </form>
+</body>
+
 </html>
